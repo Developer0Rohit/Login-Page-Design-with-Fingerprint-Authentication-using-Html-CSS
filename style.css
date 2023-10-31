@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #edf1f4;
+}
+
+.login{
+    position: relative;
+    width: 380px;
+    padding: 80px 50px 50px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
+    -15px -15px 20px #fffb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login form{
+    position: relative;
+    width: 100%;
+}
+
+.login form h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+    line-height: 0.9em;
+}
+
+.login form h2 span{
+    font-weight: 300;
+    font-size: 0.65em;
+}
+
+.login form .inputBox{
+    position: relative;
+    display: flex;
+}
+
+.login form .inputBox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.login form .inputBox input[type="text"],
+.login form .inputBox input[type="password"]{
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px  -5px 10px #fff;
+}
+
+.login form .inputBox i{
+    position: absolute;
+    left: 20px;
+    top: 25%;
+}
+
+.login form label{
+    display: flex;
+    align-items: center;
+}
+
+.login form input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+
+.login form .inputBox input[type="submit"]
+{
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 10px #fff;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login form .inputBox input[type="submit"]:focus
+{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset  -5px -5px 10px #fff;
+}
+
+.login .fingerprint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.login .fingerprint .fingerprintBox
+{
+    box-shadow:  5px 5px 10px rgba(0,0,0,0.1),
+   -5px -5px 10px #fff;
+   border: 3px solid #edf1f4;
+   padding: 15px 20px 10px;
+   border-radius: 10px;
+   background: linear-gradient(315deg,#03a9f4,#0082bc);
+}
+
+.login .fingerprint .fingerprintBox img{
+    max-width: 40px;
+    filter: invert(1);
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+}
+
+.login .fingerprint  p 
+{
+    font-weight: 500;
+}
